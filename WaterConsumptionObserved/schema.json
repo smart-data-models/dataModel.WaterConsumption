@@ -4,5 +4,6 @@
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModel.Waterconsumption/WaterconsumptionObserved/schema.json",
     "title": "Smart Data models - Water Consumption Observed schema",
-    "description": "The Smart Water Meter model captures water consumption, customer side leak alarms and associated flow rate originating from the smart water meters"
+    "description": "The Smart Water Meter model captures water consumption, customer side leak alarms and associated flow rate originating from the smart water meters",
+    "type": "object"
 }

@@ -1,0 +1,29 @@
+{
+    "@context": {
+        "acquisitionStageFailure": "https://smartdatamodels.org/dataModel.WaterConsumption/acquisitionStageFailure",
+        "address": "https://smartdatamodels.org/dataModel.WaterConsumption/address",
+        "alarmFlowPersistence": "https://smartdatamodels.org/dataModel.WaterConsumption/alarmFlowPersistence",
+        "alarmInProgress": "https://smartdatamodels.org/dataModel.WaterConsumption/alarmInProgress",
+        "alarmStopsLeaks": "https://smartdatamodels.org/dataModel.WaterConsumption/alarmStopsLeaks",
+        "alarmTamper": "https://smartdatamodels.org/dataModel.WaterConsumption/alarmTamper",
+        "alarmWaterQuality": "https://smartdatamodels.org/dataModel.WaterConsumption/alarmWaterQuality",
+        "alternateName": "https://smartdatamodels.org/dataModel.WaterConsumption/alternateName",
+        "areaServed": "https://smartdatamodels.org/dataModel.WaterConsumption/areaServed",
+        "dataProvider": "https://smartdatamodels.org/dataModel.WaterConsumption/dataProvider",
+        "dateCreated": "https://smartdatamodels.org/dataModel.WaterConsumption/dateCreated",
+        "dateModified": "https://smartdatamodels.org/dataModel.WaterConsumption/dateModified",
+        "description": "https://smartdatamodels.org/dataModel.WaterConsumption/description",
+        "id": "@id",
+        "location": "https://smartdatamodels.org/dataModel.WaterConsumption/location",
+        "maxFlow": "https://smartdatamodels.org/dataModel.WaterConsumption/maxFlow",
+        "minFlow": "https://smartdatamodels.org/dataModel.WaterConsumption/minFlow",
+        "moduleTampered": "https://smartdatamodels.org/dataModel.WaterConsumption/moduleTampered",
+        "name": "https://smartdatamodels.org/dataModel.WaterConsumption/name",
+        "owner": "https://smartdatamodels.org/dataModel.WaterConsumption/owner",
+        "persistenceFlowDuration": "https://smartdatamodels.org/dataModel.WaterConsumption/persistenceFlowDuration",
+        "seeAlso": "https://smartdatamodels.org/dataModel.WaterConsumption/seeAlso",
+        "source": "https://smartdatamodels.org/dataModel.WaterConsumption/source",
+        "type": "@type",
+        "waterConsumption": "https://smartdatamodels.org/dataModel.WaterConsumption/waterConsumption"
+    }
+}

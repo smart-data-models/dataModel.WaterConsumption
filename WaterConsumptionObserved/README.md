@@ -6,7 +6,7 @@ Version: 0.0.1
 The Smart Water Meter model captures water consumption, customer side leak alarms and associated flow rate originating from the smart water meters
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.WaterConsumption/blob/master/WaterConsumptionObserved/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.WaterConsumption/master/WaterConsumptionObserved/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.WaterConsumption/blob/master/WaterConsumptionObserved/doc/spec.md)
 

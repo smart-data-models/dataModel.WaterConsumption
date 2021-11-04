@@ -19,6 +19,7 @@
         "minFlow": "https://smartdatamodels.org/dataModel.WaterConsumption/minFlow",
         "moduleTampered": "https://smartdatamodels.org/dataModel.WaterConsumption/moduleTampered",
         "name": "https://smartdatamodels.org/name",
+        "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
         "owner": "https://smartdatamodels.org/owner",
         "persistenceFlowDuration": "https://smartdatamodels.org/dataModel.WaterConsumption/persistenceFlowDuration",
         "seeAlso": "https://smartdatamodels.org/seeAlso",

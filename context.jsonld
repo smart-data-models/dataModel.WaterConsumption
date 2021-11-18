@@ -1,0 +1,30 @@
+{
+    "@context": {
+        "acquisitionStageFailure": "https://smartdatamodels.org/dataModel.WaterConsumption/acquisitionStageFailure",
+        "address": "https://smartdatamodels.org/address",
+        "alarmFlowPersistence": "https://smartdatamodels.org/dataModel.WaterConsumption/alarmFlowPersistence",
+        "alarmInProgress": "https://smartdatamodels.org/dataModel.WaterConsumption/alarmInProgress",
+        "alarmStopsLeaks": "https://smartdatamodels.org/dataModel.WaterConsumption/alarmStopsLeaks",
+        "alarmTamper": "https://smartdatamodels.org/dataModel.WaterConsumption/alarmTamper",
+        "alarmWaterQuality": "https://smartdatamodels.org/dataModel.WaterConsumption/alarmWaterQuality",
+        "alternateName": "https://smartdatamodels.org/alternateName",
+        "areaServed": "https://smartdatamodels.org/areaServed",
+        "dataProvider": "https://smartdatamodels.org/dataProvider",
+        "dateCreated": "https://smartdatamodels.org/dateCreated",
+        "dateModified": "https://smartdatamodels.org/dateModified",
+        "description": "http://purl.org/dc/terms/description",
+        "id": "@id",
+        "location": "ngsi-ld:location",
+        "maxFlow": "https://smartdatamodels.org/dataModel.WaterConsumption/maxFlow",
+        "minFlow": "https://smartdatamodels.org/dataModel.WaterConsumption/minFlow",
+        "moduleTampered": "https://smartdatamodels.org/dataModel.WaterConsumption/moduleTampered",
+        "name": "https://smartdatamodels.org/name",
+        "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
+        "owner": "https://smartdatamodels.org/owner",
+        "persistenceFlowDuration": "https://smartdatamodels.org/dataModel.WaterConsumption/persistenceFlowDuration",
+        "seeAlso": "https://smartdatamodels.org/seeAlso",
+        "source": "https://smartdatamodels.org/source",
+        "type": "@type",
+        "waterConsumption": "https://smartdatamodels.org/dataModel.WaterConsumption/waterConsumption"
+    }
+}

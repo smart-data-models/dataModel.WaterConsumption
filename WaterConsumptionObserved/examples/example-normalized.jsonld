@@ -73,6 +73,16 @@
         "value": 0,
         "observedAt": "2021-05-23T23:14:16.000Z"
     },
+    "location": {
+        "type": "GeoProperty",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -4.128871,
+                50.95822
+            ]
+        }
+    },
     "maxFlow": {
         "type": "Property",
         "observedBy": {
@@ -111,16 +121,6 @@
         "value": "3h < 6h",
         "observedAt": "2021-05-23T23:14:16.000Z",
         "unitCode": "HUR"
-    },
-    "location": {
-        "type": "GeoProperty",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                -4.128871,
-                50.95822
-            ]
-        }
     },
     "waterConsumption": {
         "type": "Property",

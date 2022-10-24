@@ -1,15 +1,31 @@
-エンティティ水の消費量が多い  
-==============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティ水消費量（WaterConsumptionObserved  
+===================================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.WaterConsumption/blob/master/WaterConsumptionObserved/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな説明です。**スマートウォーターメーターモデルは、スマートウォーターメーターから発生する水の消費量、顧客側の漏水アラーム、関連する流量を捕捉します。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな説明**スマートウォーターメーターモデルは、スマートウォーターメーターから発信される水使用量、顧客側の漏水アラーム、および関連する流量を取得します**。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `acquisitionStageFailure`: 計量器の誘導反応がない  - `address`: 郵送先住所  - `alarmFlowPersistence`: 水の連続使用を示すアラーム  - `alarmInProgress`: 1つまたは複数のアラームが発生していることを示す  - `alarmStopsLeaks`: 断続的なリークの可能性を示すアラーム  - `alarmTamper`: 機械的な不正操作の可能性を示すアラーム  - `alarmWaterQuality`: 逆流が発生する可能性を示すアラーム  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `maxFlow`: 直近1週間に観測された最大流量  - `minFlow`: 直近1週間に観測された最小流量  - `moduleTampered`: 計量器からのモジュールの取り外し  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `persistenceFlowDuration`: 持続的な流れ（連続的な流れ）がメーターによって記録される期間。分（m）、時間（h）、日（d）のいずれかの単位で持続時間を示すテキストフィールド。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: WaterConsumptionObservedである必要があります。NGSIタイプ  - `waterConsumption`: 水道メーターの測定値。注：これはメーターを通過した総量であり、したがってその時点での累積値である。    
-必須項目  
-- `id`  - `type`  ## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `acquisitionStageFailure[integer]`: 計測機器の誘導性応答がない  - `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alarmFlowPersistence[string]`: 水の連続使用を知らせるアラーム  - `alarmInProgress[integer]`: 1 つ以上のアラームが発生中であることを示す。  - `alarmStopsLeaks[integer]`: 断続的に漏れる可能性があることを示すアラーム  - `alarmTamper[integer]`: 機械的な改ざんの可能性を示すアラーム。  - `alarmWaterQuality[integer]`: バックフローが発生する可能性があることを知らせるアラーム  - `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `maxFlow[integer]`: 直近1週間で観測された最大流量  - `minFlow[integer]`: 直近1週間に観測された最小流量  - `moduleTampered[integer]`: 計量器からのモジュールの取り外し  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `persistenceFlowDuration[string]`: 持続流量（連続流量）がメーターに記録される時間。分（m）、時間（h）または日（d）単位で継続時間を示すテキストフィールド。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: WaterConsumptionObservedでなければならない。NGSIタイプ  - `waterConsumption[integer]`: 水道メーターの読み取り値です。注 - これはメーターを通過した総量であり、したがってその時点の累積値である。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 WaterConsumptionObserved:    
@@ -378,9 +394,14 @@ WaterConsumptionObserved:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### WaterConsumptionObserved NGSI-v2 キーバリュー例  
-WaterConsumptionObservedをkey-valuesとしてJSON-LD形式で出力した例を示します。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### WaterConsumptionObserved NGSI-v2 キーバリューの例  
+以下は、WaterConsumptionObservedをJSON-LD形式でkey-valuesとした例である。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Consumer:Consumer01",  
@@ -407,8 +428,10 @@ WaterConsumptionObserved:
   "waterConsumption": 191051  
 }  
 ```  
-#### WaterConsumptionObserved NGSI-v2の正規化例。  
-ここでは、正規化されたJSON-LD形式のWaterConsumptionObservedの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### 水消費量NGSI-v2正規化例  
+以下は、WaterConsumptionObservedを正規化したJSON-LD形式の例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Consumer:Consumer01",  
@@ -477,40 +500,44 @@ WaterConsumptionObserved:
   }  
 }  
 ```  
-#### WaterConsumptionObserved NGSI-LDのキーバリューの例  
-WaterConsumptionObservedをkey-valuesとしてJSON-LD形式で出力した例です。これは`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### WaterConsumptionObserved NGSI-LD キー値例  
+WaterConsumptionObservedをJSON-LD形式でkey-valuesとした例です。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Consumer:Consumer01",  
-  "type": "WaterConsumptionObserved",  
-  "acquisitionStageFailure": 0,  
-  "alarmFlowPersistence": "Nothing to report",  
-  "alarmInProgress": 1,  
-  "alarmMetrology": 1,  
-  "alarmStopsLeaks": 0,  
-  "alarmSystem": 1,  
-  "alarmTamper": 0,  
-  "alarmWaterQuality": 0,  
-  "maxFlow": 620,  
-  "minFlow": 1,  
-  "moduleTampered": 1,  
-  "persistenceFlowDuration": "3h < 6h",  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -4.128871,  
-      50.95822  
+    "id": "urn:ngsi-ld:Consumer:Consumer01",  
+    "type": "WaterConsumptionObserved",  
+    "acquisitionStageFailure": 0,  
+    "alarmFlowPersistence": "Nothing to report",  
+    "alarmInProgress": 1,  
+    "alarmMetrology": 1,  
+    "alarmStopsLeaks": 0,  
+    "alarmSystem": 1,  
+    "alarmTamper": 0,  
+    "alarmWaterQuality": 0,  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -4.128871,  
+            50.95822  
+        ]  
+    },  
+    "maxFlow": 620,  
+    "minFlow": 1,  
+    "moduleTampered": 1,  
+    "persistenceFlowDuration": "3h < 6h",  
+    "waterConsumption": 191051,  
+    "@context": [  
+        "https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/WaterSmartMeter/jsonld-contexts/waterSmartMeter-compound.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.WaterConsumption/master/context.jsonld"  
     ]  
-  },  
-  "waterConsumption": 191051,  
-  "@context": [  
-    "https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/WaterSmartMeter/jsonld-contexts/waterSmartMeter-compound.jsonld",  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-#### WaterConsumptionObserved NGSI-LDの正規化例  
-正常化されたJSON-LD形式のWaterConsumptionObservedの例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### 水消費量観測 NGSI-LD 正規化例  
+WaterConsumptionObserved を JSON-LD 形式で正規化した例を示す。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:Consumer:Consumer01",  
@@ -587,6 +614,16 @@ WaterConsumptionObserved:
         "value": 0,  
         "observedAt": "2021-05-23T23:14:16.000Z"  
     },  
+    "location": {  
+        "type": "GeoProperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -4.128871,  
+                50.95822  
+            ]  
+        }  
+    },  
     "maxFlow": {  
         "type": "Property",  
         "observedBy": {  
@@ -626,16 +663,6 @@ WaterConsumptionObserved:
         "observedAt": "2021-05-23T23:14:16.000Z",  
         "unitCode": "HUR"  
     },  
-    "location": {  
-        "type": "GeoProperty",  
-        "value": {  
-            "type": "Point",  
-            "coordinates": [  
-                -4.128871,  
-                50.95822  
-            ]  
-        }  
-    },  
     "waterConsumption": {  
         "type": "Property",  
         "observedBy": {  
@@ -647,8 +674,17 @@ WaterConsumptionObserved:
         "unitCode": "LTR"  
     },  
     "@context": [  
-        "https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/WaterSmartMeter/jsonld-contexts/waterSmartMeter-compound.jsonld"  
+        "https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/WaterSmartMeter/jsonld-contexts/waterSmartMeter-compound.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.WaterConsumption/master/context.jsonld"  
     ]  
 }  
 ```  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  

@@ -1,15 +1,31 @@
-Entidad: ConsumoDeAguaObservado  
-===============================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entidad: ConsumoDeAguaObservado  
+===============================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.WaterConsumption/blob/master/WaterConsumptionObserved/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Descripción global: **El modelo de contador de agua inteligente captura el consumo de agua, las alarmas de fuga del lado del cliente y el caudal asociado originado por los contadores de agua inteligentes**  
+versión: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-- `acquisitionStageFailure`: No hay respuesta inductiva del dispositivo de medición  - `address`: La dirección postal  - `alarmFlowPersistence`: Alarma que indica el uso continuo de agua  - `alarmInProgress`: Indica que hay una o varias alarmas en curso  - `alarmStopsLeaks`: Alarma que indica la posibilidad de una fuga intermitente  - `alarmTamper`: Alarma que indica la posibilidad de manipulación mecánica del dispositivo  - `alarmWaterQuality`: Alarma que indica la posibilidad de que se produzcan reflujos  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `maxFlow`: Caudal máximo observado durante la última semana  - `minFlow`: Caudal mínimo observado durante la última semana  - `moduleTampered`: Extracción del módulo del dispositivo de medición  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `persistenceFlowDuration`: La duración de la persistencia del flujo (flujo continuo) registrada por el medidor. Campo de texto que muestra las duraciones en minutos (m), horas (h) o días (d).  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `type`: Tiene que ser WaterConsumptionObserved. Tipo NGSI  - `waterConsumption`: La lectura del contador de agua. Nota: se trata del volumen total que ha pasado por el contador y, por tanto, es un total acumulado en el momento    
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
+- `acquisitionStageFailure[integer]`: No hay respuesta inductiva del dispositivo de medición  - `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alarmFlowPersistence[string]`: Alarma que indica el uso continuo de agua  - `alarmInProgress[integer]`: Indica que hay una o varias alarmas en curso  - `alarmStopsLeaks[integer]`: Alarma que indica la posibilidad de una fuga intermitente  - `alarmTamper[integer]`: Alarma que indica la posibilidad de manipulación mecánica del dispositivo  - `alarmWaterQuality[integer]`: Alarma que indica la posibilidad de que se produzcan reflujos  - `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `id[*]`: Identificador único de la entidad  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `maxFlow[integer]`: Caudal máximo observado durante la última semana  - `minFlow[integer]`: Caudal mínimo observado durante la última semana  - `moduleTampered[integer]`: Extracción del módulo del dispositivo de medición  - `name[string]`: El nombre de este artículo.  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `persistenceFlowDuration[string]`: La duración de la persistencia del flujo (flujo continuo) registrada por el medidor. Campo de texto que muestra las duraciones en minutos (m), horas (h) o días (d).  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type[string]`: Tiene que ser WaterConsumptionObserved. Tipo NGSI  - `waterConsumption[integer]`: La lectura del contador de agua. Nota: se trata del volumen total que ha pasado por el contador y, por tanto, es un total acumulado en el momento  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propiedades requeridas  
-- `id`  - `type`  ## Descripción del modelo de datos de las propiedades  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 WaterConsumptionObserved:    
@@ -370,11 +386,22 @@ WaterConsumptionObserved:
     - id    
     - type    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.WaterConsumption/blob/master/WaterConsumptionObserved/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.Waterconsumption/WaterconsumptionObserved/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Ejemplo de carga útil  
 #### WaterConsumptionObserved NGSI-v2 key-values Ejemplo  
 Este es un ejemplo de WaterConsumptionObserved en formato JSON-LD como valores clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Consumer:Consumer01",  
@@ -401,8 +428,10 @@ WaterConsumptionObserved:
   "waterConsumption": 191051  
 }  
 ```  
+</details>  
 #### ConsumoDeAguaObservado NGSI-v2 normalizado Ejemplo  
 Este es un ejemplo de un WaterConsumptionObserved en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Consumer:Consumer01",  
@@ -471,40 +500,44 @@ WaterConsumptionObserved:
   }  
 }  
 ```  
+</details>  
 #### WaterConsumptionObserved NGSI-LD key-values Ejemplo  
-Este es un ejemplo de WaterConsumptionObserved en formato JSON-LD como valores clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+Aquí hay un ejemplo de WaterConsumptionObserved en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Consumer:Consumer01",  
-  "type": "WaterConsumptionObserved",  
-  "acquisitionStageFailure": 0,  
-  "alarmFlowPersistence": "Nothing to report",  
-  "alarmInProgress": 1,  
-  "alarmMetrology": 1,  
-  "alarmStopsLeaks": 0,  
-  "alarmSystem": 1,  
-  "alarmTamper": 0,  
-  "alarmWaterQuality": 0,  
-  "maxFlow": 620,  
-  "minFlow": 1,  
-  "moduleTampered": 1,  
-  "persistenceFlowDuration": "3h < 6h",  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -4.128871,  
-      50.95822  
+    "id": "urn:ngsi-ld:Consumer:Consumer01",  
+    "type": "WaterConsumptionObserved",  
+    "acquisitionStageFailure": 0,  
+    "alarmFlowPersistence": "Nothing to report",  
+    "alarmInProgress": 1,  
+    "alarmMetrology": 1,  
+    "alarmStopsLeaks": 0,  
+    "alarmSystem": 1,  
+    "alarmTamper": 0,  
+    "alarmWaterQuality": 0,  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -4.128871,  
+            50.95822  
+        ]  
+    },  
+    "maxFlow": 620,  
+    "minFlow": 1,  
+    "moduleTampered": 1,  
+    "persistenceFlowDuration": "3h < 6h",  
+    "waterConsumption": 191051,  
+    "@context": [  
+        "https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/WaterSmartMeter/jsonld-contexts/waterSmartMeter-compound.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.WaterConsumption/master/context.jsonld"  
     ]  
-  },  
-  "waterConsumption": 191051,  
-  "@context": [  
-    "https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/WaterSmartMeter/jsonld-contexts/waterSmartMeter-compound.jsonld",  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### ConsumoDeAguaObservado NGSI-LD normalizado Ejemplo  
 Este es un ejemplo de un WaterConsumptionObserved en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:Consumer:Consumer01",  
@@ -581,6 +614,16 @@ WaterConsumptionObserved:
         "value": 0,  
         "observedAt": "2021-05-23T23:14:16.000Z"  
     },  
+    "location": {  
+        "type": "GeoProperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -4.128871,  
+                50.95822  
+            ]  
+        }  
+    },  
     "maxFlow": {  
         "type": "Property",  
         "observedBy": {  
@@ -620,16 +663,6 @@ WaterConsumptionObserved:
         "observedAt": "2021-05-23T23:14:16.000Z",  
         "unitCode": "HUR"  
     },  
-    "location": {  
-        "type": "GeoProperty",  
-        "value": {  
-            "type": "Point",  
-            "coordinates": [  
-                -4.128871,  
-                50.95822  
-            ]  
-        }  
-    },  
     "waterConsumption": {  
         "type": "Property",  
         "observedBy": {  
@@ -641,8 +674,17 @@ WaterConsumptionObserved:
         "unitCode": "LTR"  
     },  
     "@context": [  
-        "https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/WaterSmartMeter/jsonld-contexts/waterSmartMeter-compound.jsonld"  
+        "https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/WaterSmartMeter/jsonld-contexts/waterSmartMeter-compound.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.WaterConsumption/master/context.jsonld"  
     ]  
 }  
 ```  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  

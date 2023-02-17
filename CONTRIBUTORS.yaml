@@ -1,30 +1,36 @@
 description: This is a compilation list of all CONTRIBUTORS across different objects (data models) alphabetically ordered. All fields are non mandatory
 contributors:
-- name: Gareth
-  surname: Lewis
-  mail: g.lewis2@exeter.ac.uk
-  organization: University of Exeter
-  project: 
-  comments: 
-  year: 2022
-- name: Josh
-  surname: Pocock
-  mail: jpocock@southwestwater.co.uk
-  organization: South West Water
-  project: 
-  comments: 
-  year: 2022
-- name: Bret
-  surname: Snider
-  mail: b.snider@exeter.ac.uk
-  organization: University of Exeter
-  project: 
-  comments: 
-  year: 2022
-- name: Ben
-  surname: Ward
-  mail: bdward@southwestwater.co.uk
-  organization: South West Water
-  project: 
-  comments: 
-  year: 2022
+  - name: Gareth
+    surname: Lewis
+    mail: g.lewis2@exeter.ac.uk
+    organization: University of Exeter
+    project:
+    comments:
+    year: 2022
+  - name: Josh
+    surname: Pocock
+    mail: jpocock@southwestwater.co.uk
+    organization: South West Water
+    project:
+    comments:
+    year: 2022
+  - name: Bret
+    surname: Snider
+    mail: b.snider@exeter.ac.uk
+    organization: University of Exeter
+    project:
+    comments:
+    year: 2022
+  - name: Ben
+    surname: Ward
+    mail: bdward@southwestwater.co.uk
+    organization: South West Water
+    project:
+    comments:
+    year: 2022
+  - name: SeungMyeong
+    surname: Jeong
+    mail: sm.jeong@keti.re.kr
+    organization: Korea Electronics Technology Institute
+    project: Water DNA project in the Intelligent Management Program for Urban Water Resources Program funded by Korea Ministry of Environment
+    comments: Full name of the Water DNA project is "Technologies on hyper-connected SWG and LID data management platform and analytics" (RE201903069)

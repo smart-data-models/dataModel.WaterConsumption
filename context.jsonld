@@ -1,5 +1,6 @@
 {
     "@context": {
+        "WaterConsumptionObserved": "https://smartdatamodels.org/dataModel.WaterConsumption/WaterConsumptionObserved",
         "acquisitionStageFailure": "https://smartdatamodels.org/dataModel.WaterConsumption/acquisitionStageFailure",
         "address": "https://smartdatamodels.org/address",
         "alarmFlowPersistence": "https://smartdatamodels.org/dataModel.WaterConsumption/alarmFlowPersistence",

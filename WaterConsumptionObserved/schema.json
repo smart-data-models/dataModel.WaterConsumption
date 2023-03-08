@@ -103,6 +103,14 @@
                 "waterConsumption": {
                     "type": "integer",
                     "description": "Property. The water meter reading. Note \u2013 this is total volume passed through the meter and is therefore a cumulative total at the time. Units:'Cubic meters'"
+                },
+                 "waterType": {
+                     "type": "string",
+                     "description": "Property. The type of water by water temperature. Utility bills distinguish hot water.",
+                      "enum": [
+                          "hotWater", 
+                          "serviceWater"
+                      ]
                 }
             }
         }

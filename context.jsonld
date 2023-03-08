@@ -26,6 +26,7 @@
         "seeAlso": "https://smartdatamodels.org/seeAlso",
         "source": "https://smartdatamodels.org/source",
         "type": "@type",
-        "waterConsumption": "https://smartdatamodels.org/dataModel.WaterConsumption/waterConsumption"
+        "waterConsumption": "https://smartdatamodels.org/dataModel.WaterConsumption/waterConsumption",
+        "waterType": "https://smartdatamodels.org/dataModel.WaterConsumption/waterType"
     }
 }

@@ -11,7 +11,7 @@ info:
   description:  |
     The Smart Water Meter model captures water consumption, customer side leak alarms and associated flow rate originating from the smart water meters
   title: WaterConsumptionObserved
-  version: "0.0.1"
+  version: "0.0.2"
 openapi: "3.0.0"
 
 paths: 

@@ -8,14 +8,21 @@
 <!-- /15-License -->  
 <!-- 20-Description -->  
 Descrizione globale: **Il modello Smart Water Meter acquisisce il consumo di acqua, gli allarmi di perdita lato cliente e la portata associata provenienti dai contatori intelligenti dell'acqua**.  
-versione: 0.0.1  
+versione: 0.0.2  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
 <sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
-- `acquisitionStageFailure[integer]`: Nessuna risposta induttiva del dispositivo di misurazione  - `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alarmFlowPersistence[string]`: Allarme che segnala l'utilizzo continuo di acqua  - `alarmInProgress[integer]`: Indica che sono in corso uno o più allarmi.  - `alarmStopsLeaks[integer]`: Allarme che segnala la possibilità di una perdita intermittente  - `alarmTamper[integer]`: Allarme che segnala la possibilità di manomissione meccanica del dispositivo.  - `alarmWaterQuality[integer]`: Allarme che segnala la possibilità che si verifichino dei riflussi  - `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `location[*]`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `maxFlow[integer]`: Portata massima osservata nell'ultima settimana  - `minFlow[integer]`: Portata minima osservata nell'ultima settimana  - `moduleTampered[integer]`: Rimozione del modulo dal dispositivo di misurazione  - `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `persistenceFlowDuration[string]`: La durata del flusso persistente (flusso continuo) registrato dal contatore. Campo di testo che indica la durata in minuti (m), ore (h) o giorni (d).  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `type[string]`: Deve essere WaterConsumptionObserved. Tipo NGSI  - `waterConsumption[integer]`: La lettura del contatore dell'acqua. Nota: si tratta del volume totale passato attraverso il contatore ed è quindi un totale cumulativo al momento della lettura.  <!-- /30-PropertiesList -->  
+- `acquisitionStageFailure[number]`: Nessuna risposta induttiva del dispositivo di misurazione  - `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Il paese. Ad esempio, la Spagna  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: La località in cui si trova l'indirizzo civico e che si trova nella regione  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La regione in cui si trova la località, e che si trova nel paese  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un distretto è un tipo di divisione amministrativa che, in alcuni paesi, è gestita dal governo locale.    
+	- `postOfficeBoxNumber[string]`: Il numero di casella postale per gli indirizzi di casella postale. Ad esempio, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Il codice postale. Ad esempio, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: L'indirizzo stradale  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alarmFlowPersistence[string]`: Allarme che segnala l'utilizzo continuo di acqua  - `alarmInProgress[number]`: Indica che sono in corso uno o più allarmi.  - `alarmStopsLeaks[number]`: Allarme che segnala la possibilità di una perdita intermittente  - `alarmTamper[number]`: Allarme che segnala la possibilità di manomissione meccanica del dispositivo.  - `alarmWaterQuality[number]`: Allarme che segnala la possibilità che si verifichino dei riflussi  - `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `maxFlow[number]`: Portata massima osservata nell'ultima settimana  - `minFlow[number]`: Portata minima osservata nell'ultima settimana  - `moduleTampered[number]`: Rimozione del modulo dal dispositivo di misurazione  - `name[string]`: Il nome di questo elemento  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `persistenceFlowDuration[string]`: La durata del flusso persistente (flusso continuo) registrato dal contatore. Campo di testo che indica la durata in minuti (m), ore (h) o giorni (d).  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `type[string]`: Deve essere WaterConsumptionObserved. Tipo NGSI  - `waterConsumption[number]`: La lettura del contatore dell'acqua. Nota: si tratta del volume totale passato attraverso il contatore ed è quindi un totale cumulativo al momento della lettura.  - `waterType[string]`: Il tipo di acqua in base alla temperatura dell'acqua. Le bollette distinguono l'acqua calda  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Proprietà richieste  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -32,128 +39,160 @@ WaterConsumptionObserved:
   description: 'The Smart Water Meter model captures water consumption, customer side leak alarms and associated flow rate originating from the smart water meters'    
   properties:    
     acquisitionStageFailure:    
-      description: 'No inductive response of metering device'    
-      type: integer    
+      description: No inductive response of metering device    
+      type: number    
       x-ngsi:    
         type: Property    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alarmFlowPersistence:    
-      description: 'Alarm signifying continuous water use'    
+      description: Alarm signifying continuous water use    
       enum:    
-        - 'Nothing to report'    
-        - 'No persistence'    
-        - 'In progress impacting persistence'    
-        - 'In progress persistence'    
-        - 'Past Persistence during the period'    
+        - Nothing to report    
+        - No persistence    
+        - In progress impacting persistence    
+        - In progress persistence    
+        - Past Persistence during the period    
       type: string    
       x-ngsi:    
         type: Property    
     alarmInProgress:    
-      description: 'Indicates that one or more alarms are in progress'    
+      description: Indicates that one or more alarms are in progress    
       enum:    
         - 0    
         - 1    
-      type: integer    
+      type: number    
       x-ngsi:    
         type: Property    
     alarmStopsLeaks:    
-      description: 'Alarm signifying the potential for an intermittent leak'    
+      description: Alarm signifying the potential for an intermittent leak    
       enum:    
         - 0    
         - 1    
-      type: integer    
+      type: number    
       x-ngsi:    
         type: Property    
     alarmTamper:    
-      description: 'Alarm signifying the potential of mechanical tampering with the device'    
+      description: Alarm signifying the potential of mechanical tampering with the device    
       enum:    
         - 0    
         - 1    
-      type: integer    
+      type: number    
       x-ngsi:    
         type: Property    
     alarmWaterQuality:    
-      description: 'Alarm signifying the potential of backflows occurring'    
+      description: Alarm signifying the potential of backflows occurring    
       enum:    
         - 0    
         - 1    
-      type: integer    
+      type: number    
       x-ngsi:    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
     id:    
-      anyOf: &waterconsumptionobserved_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -172,9 +211,11 @@ WaterConsumptionObserved:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -196,9 +237,11 @@ WaterConsumptionObserved:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -222,9 +265,11 @@ WaterConsumptionObserved:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -245,9 +290,11 @@ WaterConsumptionObserved:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -271,9 +318,11 @@ WaterConsumptionObserved:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -299,61 +348,77 @@ WaterConsumptionObserved:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     maxFlow:    
-      description: 'Maximum flow rate observed during the last week'    
-      type: integer    
+      description: Maximum flow rate observed during the last week    
+      type: number    
       x-ngsi:    
         type: Property    
         units: litres/hour    
     minFlow:    
-      description: 'Minimum flow rate observed during the last week'    
-      type: integer    
+      description: Minimum flow rate observed during the last week    
+      type: number    
       x-ngsi:    
         type: Property    
         units: litres/hour    
     moduleTampered:    
-      description: 'Removal of module from metering device'    
-      type: integer    
+      description: Removal of module from metering device    
+      type: number    
       x-ngsi:    
         type: Property    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *waterconsumptionobserved_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
     persistenceFlowDuration:    
-      description: 'The duration that persistence flow (continuous flow) is recorded by the meter. Text  field showing durations in minutes (m), hours (h) or days (d).'    
+      description: 'The duration that persistence flow (continuous flow) is recorded by the meter. Text  field showing durations in minutes (m), hours (h) or days (d)'    
       enum:    
-        - '15m < 60m'    
-        - '60m < 3h'    
-        - '3h < 6h'    
-        - '6h < 12h'    
-        - '12h < 24h'    
-        - '24h < 2d'    
-        - '2d < 4d'    
-        - '4d < 8d'    
-        - '8d < 15d'    
-        - '15d < 30d'    
-        - '30d < 90d'    
-        - '90d < 180d'    
+        - 15m < 60m    
+        - 60m < 3h    
+        - 3h < 6h    
+        - 6h < 12h    
+        - 12h < 24h    
+        - 24h < 2d    
+        - 2d < 4d    
+        - 4d < 8d    
+        - 8d < 15d    
+        - 15d < 30d    
+        - 30d < 90d    
+        - 90d < 180d    
         - '> 180d'    
       type: string    
       x-ngsi:    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -365,33 +430,41 @@ WaterConsumptionObserved:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
     type:    
-      description: 'It has to be WaterConsumptionObserved. NGSI type'    
+      description: It has to be WaterConsumptionObserved. NGSI type    
       enum:    
         - WaterConsumptionObserved    
       type: string    
       x-ngsi:    
         type: Property    
     waterConsumption:    
-      description: 'The water meter reading. Note – this is total volume passed through the meter and is therefore a cumulative total at the time'    
-      type: integer    
+      description: The water meter reading. Note – this is total volume passed through the meter and is therefore a cumulative total at the time    
+      type: number    
       x-ngsi:    
         type: Property    
-        units: 'Cubic meters'    
+        units: Cubic meters    
+    waterType:    
+      description: The type of water by water temperature. Utility bills distinguish hot water    
+      enum:    
+        - hotWater    
+        - serviceWater    
+      type: string    
+      x-ngsi:    
+        type: Property    
   required:    
     - id    
     - type    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.WaterConsumption/blob/master/WaterConsumptionObserved/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Waterconsumption/WaterconsumptionObserved/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
@@ -399,7 +472,7 @@ WaterConsumptionObserved:
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## Esempi di payload  
-#### WaterConsumptionObserved Valori chiave NGSI-v2 Esempio  
+#### WaterConsumptionObserved Valori-chiave NGSI-v2 Esempio  
 Ecco un esempio di WaterConsumptionObserved in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
@@ -535,7 +608,7 @@ WaterConsumptionObserved:
 }  
 ```  
 </details>  
-#### Consumo d'acquaOsservato NGSI-LD normalizzato Esempio  
+#### Consumo d'acqua osservato Esempio normalizzato NGSI-LD  
 Ecco un esempio di WaterConsumptionObserved in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  

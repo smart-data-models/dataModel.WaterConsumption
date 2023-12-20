@@ -4,9 +4,7 @@
   "acquisitionStageFailure": 0,
   "alarmFlowPersistence": "Nothing to report",
   "alarmInProgress": 1,
-  "alarmMetrology": 1,
   "alarmStopsLeaks": 0,
-  "alarmSystem": 1,
   "alarmTamper": 0,
   "alarmWaterQuality": 0,
   "location": {

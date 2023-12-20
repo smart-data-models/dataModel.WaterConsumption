@@ -2,48 +2,40 @@
   "id": "urn:ngsi-ld:Consumer:Consumer01",
   "type": "WaterConsumptionObserved",
   "acquisitionStageFailure": {
-    "type": "Boolean",
-    "value": false
+    "type": "Number",
+    "value": 0
   },
   "alarmFlowPersistence": {
     "type": "Text",
     "value": "Nothing to report"
   },
   "alarmInProgress": {
-    "type": "Boolean",
-    "value": true
-  },
-  "alarmMetrology": {
-    "type": "Boolean",
-    "value": true
+    "type": "Number",
+    "value": 1
   },
   "alarmStopsLeaks": {
-    "type": "Boolean",
-    "value": false
-  },
-  "alarmSystem": {
-    "type": "Boolean",
-    "value": true
+    "type": "Number",
+    "value": 0
   },
   "alarmTamper": {
-    "type": "Boolean",
-    "value": false
+    "type": "Number",
+    "value": 0
   },
   "alarmWaterQuality": {
-    "type": "Boolean",
-    "value": false
+    "type": "Number",
+    "value": 0
   },
   "maxFlow": {
     "type": "Number",
     "value": 620
   },
   "minFlow": {
-    "type": "Boolean",
-    "value": true
+    "type": "Number",
+    "value": 1
   },
   "moduleTampered": {
-    "type": "Boolean",
-    "value": true
+    "type": "Number",
+    "value": 1
   },
   "persistenceFlowDuration": {
     "type": "Text",

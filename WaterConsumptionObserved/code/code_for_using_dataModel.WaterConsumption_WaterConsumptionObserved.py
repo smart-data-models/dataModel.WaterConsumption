@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "WaterConsumptionObserved"
 subject = "dataModel.WaterConsumption"
-acquisitionStageFailure = {'type': 'Property', 'observedBy': {'type': 'Relationship', 'object': 'urn:ngsi-ld:Device:01'}, 'value': 0, 'observedAt': '2021-05-23T23:14:16.000Z'}
+acquisitionStageFailure = 0
 attribute = "acquisitionStageFailure"
 value = acquisitionStageFailure
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-alarmFlowPersistence = "{'type': 'Property', 'observedBy': {'type': 'Relationship', 'object': 'urn:ngsi-ld:Device:01'}, 'value': 'Nothing to report', 'observedAt': '2021-05-23T23:14:16.000Z'}"
+alarmFlowPersistence = "Nothing to report"
 attribute = "alarmFlowPersistence"
 value = alarmFlowPersistence
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-alarmInProgress = {'type': 'Property', 'observedBy': {'type': 'Relationship', 'object': 'urn:ngsi-ld:Device:01'}, 'value': 1, 'observedAt': '2021-05-23T23:14:16.000Z'}
+alarmInProgress = 1
 attribute = "alarmInProgress"
 value = alarmInProgress
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-alarmStopsLeaks = {'type': 'Property', 'observedBy': {'type': 'Relationship', 'object': 'urn:ngsi-ld:Device:01'}, 'value': 0, 'observedAt': '2021-05-23T23:14:16.000Z'}
+alarmStopsLeaks = 0
 attribute = "alarmStopsLeaks"
 value = alarmStopsLeaks
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it

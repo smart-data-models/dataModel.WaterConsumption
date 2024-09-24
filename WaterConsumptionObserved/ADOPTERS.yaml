@@ -8,3 +8,11 @@ currentAdopters:
  project: https://www.fiware4water.eu/
  comments:
  startDate: 21-6-21
+-
+ adopter:  NAIADES Project
+ description: We use it for our pilot use cases in Alicante, Braila and Carouge.
+ mail: eunah.kim@udgalliance.org
+ organization: UDG Alliance
+ project: NAIADES
+ comments:
+ startDate: 2022-1-3

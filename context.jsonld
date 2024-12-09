@@ -15,11 +15,11 @@
         "areaServed": "https://smartdatamodels.org/areaServed",
         "bbox": {
             "@container": "@list",
-            "@id": "geojson:bbox"
+            "@id": "https://purl.org/geojson/vocab#bbox"
         },
         "coordinates": {
             "@container": "@list",
-            "@id": "geojson:coordinates"
+            "@id": "https://purl.org/geojson/vocab#coordinates"
         },
         "dataProvider": "https://smartdatamodels.org/dataProvider",
         "dateCreated": "https://smartdatamodels.org/dateCreated",
@@ -27,7 +27,7 @@
         "description": "http://purl.org/dc/terms/description",
         "district": "https://smartdatamodels.org/district",
         "id": "@id",
-        "location": "ngsi-ld:location",
+        "location": "https://uri.etsi.org/ngsi-ld/location",
         "maxFlow": "https://smartdatamodels.org/dataModel.WaterConsumption/maxFlow",
         "minFlow": "https://smartdatamodels.org/dataModel.WaterConsumption/minFlow",
         "moduleTampered": "https://smartdatamodels.org/dataModel.WaterConsumption/moduleTampered",
